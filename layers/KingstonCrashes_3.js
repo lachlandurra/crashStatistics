@@ -55,18 +55,18 @@ document.getElementById('localRoadFilterCheckbox').addEventListener('change', fu
 
 var json_KingstonCrashes_3;
 
-fetch('https://vicroadsopendatastorehouse.vicroads.vic.gov.au/opendata/Road_Safety/VICTORIAN_ROAD_CRASH_DATA.geojson')
+fetch('VICTORIAN_ROAD_CRASH_DATA.geojson')
 .then(response => {
     if (!response.ok) {
-    throw new Error('Network response was not ok');
+        throw new Error('Network response was not ok');
     }
     return response.json(); // Parses the response body as JSON
 })
 .then(data => {
     json_KingstonCrashes_3 = data;
     // Now 'json_KingstonCrashes_3' contains your GeoJSON data
+    // You can use 'json_KingstonCrashes_3' as needed in your application
 })
 .catch(error => {
     console.error('There was a problem with your fetch operation:', error);
 });
-  
