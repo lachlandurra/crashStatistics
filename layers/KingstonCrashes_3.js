@@ -68,5 +68,5 @@ fetch('VICTORIAN_ROAD_CRASH_DATA.geojson')
     // You can use 'json_KingstonCrashes_3' as needed in your application
 })
 .catch(error => {
-    console.error('There was a problem with your fetch operation:', error);
+    console.error('There was a problem with your local fetch operation:', error);
 });
