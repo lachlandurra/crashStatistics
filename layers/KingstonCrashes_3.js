@@ -63,6 +63,7 @@ fetch('VICTORIAN_ROAD_CRASH_DATA.geojson')
     return response.text(); // First, get the response text
 })
 .then(text => {
+    console.log("text: ")
     console.log(text); // Log the text to see what you got
     return JSON.parse(text); // Then parse the text as JSON
 })
